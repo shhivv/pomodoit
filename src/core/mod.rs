@@ -8,5 +8,5 @@ pub use client::*;
 ///Represents an error raised in the bot
 pub type Error = Box<dyn std::error::Error + Send + Sync>;
 
-///Represents the context object recieved in commands
+///Represents the context object received in commands
 pub type Context<'a> = poise::Context<'a, Data, Error>;
