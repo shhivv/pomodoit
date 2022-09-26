@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    restart: always
+    

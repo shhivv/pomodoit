@@ -3,11 +3,11 @@
 use super::handler::Handler;
 use crate::commands::*;
 
-use std::time::SystemTime;
-use poise::serenity_prelude as serenity;
-use tracing::info;
 use anyhow::Result;
+use poise::serenity_prelude as serenity;
 use poise::{Framework, FrameworkOptions};
+use std::time::SystemTime;
+use tracing::info;
 
 /// Shared data struct
 pub struct Data {
